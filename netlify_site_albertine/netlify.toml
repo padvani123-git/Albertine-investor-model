@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[edge_functions]]
+  path = "/*"
+  function = "gate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
